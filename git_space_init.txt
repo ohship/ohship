@@ -1,0 +1,33 @@
+
+git config --global user.name "user_name"
+git config --global user.email "email"
+
+
+
+# 查看全局用户名和邮箱
+git config --global user.name
+git config --global user.email
+
+# 查看所有全局配置项
+git config --global --list
+
+
+
+
+ssh-keygen -t ed25519 -C "email"
+
+
+
+eval $(ssh-agent -s)
+ssh-add ~/.ssh/id_ed25519
+
+
+
+
+
+bash
+# 设置 HTTP 代理
+git config --global http.proxy http://127.0.0.1:7890
+
+# 设置 HTTPS 代理（通常与 HTTP 代理相同）
+git config --global https.proxy http://127.0.0.1:7890
